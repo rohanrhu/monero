@@ -126,6 +126,5 @@ script: |
     mv bin ${DISTNAME}
     find ${DISTNAME}/ | sort | tar --no-recursion --owner=0 --group=0 -c -T - | bzip2 -9 > ${OUTDIR}/${DISTNAME}.tar.bz2
     cd ..
-    rm -rf build
   done
 
